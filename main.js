@@ -1,10 +1,12 @@
 const form = document.getElementById("form");
+const main = document.getElementById("main")
 const complished = document.getElementById("complished")
+const button = document.getElementById("submit")
 
 function Onmount(){
     if(localStorage.getItem("complished") === "true"){
-        form.style.display = "none"
-        complished.style.display = "block"
+        main.style.display = "none"
+        complished.style.display = "flex"
     }
 }
 
@@ -12,6 +14,9 @@ Onmount()
 
 function handleForm(event) { 
     event.preventDefault(); 
+
+    button.innerHTML = 'Patientez...';
+
     const name = document.getElementById("input_name").value
     const prenom = document.getElementById("input_prenom").value
     const mail = document.getElementById("input_mail").value

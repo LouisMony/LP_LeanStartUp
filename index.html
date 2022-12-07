@@ -10,30 +10,36 @@
 </head>
 <body>
     <div class="left">
-        <h1>Titre du formulaire</h1>
+        <div id="main">
+            <h1>Titre du formulaire</h1>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nulla dolorum facere et illo doloribus.</p>
-
-        <form id="form">
-            <label for="input_name">Nom :</label>
-            <input type="text" name="Name" id="input_name" required pattern="^[a-zA-Z\-]+$"><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nulla dolorum facere et illo doloribus.</p>
     
-            <label for="input_prenom">Prénom :</label>
-            <input type="text" name="Prenom" id="input_prenom" required><br>
+            <form id="form">
+                <label for="input_name">Nom<span><sup>*</sup></span></label>
+                <input type="text" name="Name" id="input_name" required pattern="^[a-zA-Z\-]+$"><br>
+        
+                <label for="input_prenom">Prénom<span><sup>*</sup></span></label>
+                <input type="text" name="Prenom" id="input_prenom" required><br>
+        
+                <label for="input_mail">Adresse mail<span><sup>*</sup></span></label>
+                <input type="email" name="Mail" id="input_mail" required><br>
+        
+                <label for="input_sexe">Sexe<span><sup>*</sup></span></label>
+                <select name="Sexe" id="input_sexe" required>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select><br>
+                <button type="submit" id="submit">Valider</button>
     
-            <label for="input_mail">Adresse mail: </label>
-            <input type="email" name="Mail" id="input_mail" required><br>
-    
-            <label for="input_sexe">Sexe: </label>
-            <select name="Sexe" id="input_sexe" required>
-                <option value="Homme">Homme</option>
-                <option value="Femme">Femme</option>
-                <option value="Autre">Autre</option>
-            </select><br>
-            <button type="submit">Valider</button>
-        </form>
-    
-        <div id="complished">Nous vous remercions pour votre inscription</div>
+                <p id="ML"><sup>*</sup> Champ obligatoire</p>
+            </form>
+        </div>
+        
+        <div id="complished">
+            Nous vous remercions pour votre inscription
+        </div>
     </div>
 
     <div class="right"></div>
