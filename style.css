@@ -99,7 +99,7 @@ body .left form input:hover {
 }
 
 body .left form button {
-  background-color: #222222;
+  background-color: #8BC292;
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -112,7 +112,7 @@ body .left form button {
 }
 
 body .left form button:hover {
-  background-color: black;
+  background-color: #47ae54;
 }
 
 body .left #complished {
@@ -130,6 +130,11 @@ body .left #complished {
   height: 100%;
   font-weight: 600;
   font-size: 18px;
+}
+
+body .left #complished #svg {
+  padding-bottom: 30px;
+  width: 100px;
 }
 
 body .right {
