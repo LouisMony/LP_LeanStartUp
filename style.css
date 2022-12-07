@@ -18,6 +18,7 @@ body {
 }
 
 body .left {
+  overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 30px;
@@ -44,10 +45,17 @@ body .left p {
   padding: 0 0 15px 0;
 }
 
+body .left #form_b {
+  display: none;
+}
+
 body .left form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+body .left form, body .left #form_b {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -55,19 +63,20 @@ body .left form {
   width: 100%;
 }
 
-body .left form #ML {
+body .left form #ML, body .left form #ML_B, body .left #form_b #ML, body .left #form_b #ML_B {
   font-size: 12px;
   margin-top: 10px;
   color: #676767;
 }
 
-body .left form label {
+body .left form label, body .left #form_b label {
+  color: #5a5a5a;
   font-size: 14px;
   padding-bottom: 5px;
   width: 100%;
 }
 
-body .left form input, body .left form select, body .left form button {
+body .left form input, body .left form select, body .left form button, body .left #form_b input, body .left #form_b select, body .left #form_b button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -79,26 +88,26 @@ body .left form input, body .left form select, body .left form button {
   transition: all 200ms linear;
 }
 
-body .left form input:focus, body .left form select:focus, body .left form button:focus {
+body .left form input:focus, body .left form select:focus, body .left form button:focus, body .left #form_b input:focus, body .left #form_b select:focus, body .left #form_b button:focus {
   border: solid 1px black;
   outline: none;
 }
 
-body .left form input {
+body .left form input, body .left #form_b input {
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 
-body .left form input:focus {
+body .left form input:focus, body .left #form_b input:focus {
   background-color: #eeeeee;
   border: solid 1px black;
 }
 
-body .left form input:hover {
+body .left form input:hover, body .left #form_b input:hover {
   border: solid 1px black;
 }
 
-body .left form button {
+body .left form button, body .left #form_b button {
   background-color: #8BC292;
   color: white;
   font-weight: 600;
@@ -111,7 +120,7 @@ body .left form button {
   transition: all 200ms linear;
 }
 
-body .left form button:hover {
+body .left form button:hover, body .left #form_b button:hover {
   background-color: #47ae54;
 }
 

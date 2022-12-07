@@ -31,9 +31,57 @@
                     <option value="Femme">Femme</option>
                     <option value="Autre">Autre</option>
                 </select><br>
-                <button type="submit" id="submit">Valider</button>
+
+                <label for="input_age">Age<span><sup>*</sup></span></label>
+                <input type="number" name="age" id="input_age" required><br>
+
+                <button type="submit" id="submit">Suivant</button>
     
                 <p id="ML"><sup>*</sup> Champ obligatoire</p>
+            </form>
+
+            <form id="form_b">
+                <label for="input_question_1">Par an, combien de fois partez-vous en voyage&nbsp;?<span><sup>*</sup></span></label>
+                <select name="Question_1" id="input_question_1" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6 et plus">6 et plus</option>
+                </select><br>
+                
+                <label for="input_question_2">Organisez-vous des voyages dans un cadre personnel ou professionnel&nbsp;?<span><sup>*</sup></span></label>
+                <select type="text" name="Prenom" id="input_question_2" required>
+                    <option value="Professionnel">Professionnel</option>
+                    <option value="Personnel">Personnel</option>
+                </select><br>
+
+                <label for="input_question_3">Pour organiser un voyage, comment vous y prenez-vous, votre organisation change t-elle en fonction du nombre de personnes partantes&nbsp;?<span><sup>*</sup></span></label>
+                <input type="text" name="input_question_3" id="input_question_3" required><br>
+
+                <label for="input_question_4">Voyagez-vous à plusieurs&nbsp;? Si oui à combien (environ)&nbsp;?<span><sup>*</sup></span></label>
+                <select type="text" name="Prenom" id="input_question_4" required>
+                    <option value="Je voyage seul">Je voyage seul</option>
+                    <option value="1 personne">Je voyage avec 1 personne</option>
+                    <option value="2 personnes">Je voyage avec 2 personnes</option>
+                    <option value="3 personnes">Je voyage avec 3 personnes</option>
+                    <option value="4 personnes">Je voyage avec 4 personnes</option>
+                    <option value="5 personnes">Je voyage avec 5 personnes</option>
+                    <option value="5 personnes et plus">Je voyage avec plus de 5 personnes</option>
+                </select><br>
+
+                <label for="input_question_5">Utilisez-vous des applications pour organiser vos voyages ? Si oui, la ou lesquelles et quels sont les avantages et inconvénients&nbsp;?<span><sup>*</sup></span></label>
+                <input type="text" name="input_question_5" id="input_question_5" required><br>
+
+                <label for="input_question_6">Jugez vous utiles que les info relatives à votre voyage (billets de transport, réservation, calendrier etc...) soient automatiquement regroupées dans une seul et meme app&nbsp;?<span><sup>*</sup></span></label>
+                <select type="text" name="Prenom" id="input_question_6" required>
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select><br>
+
+                <button type="submit" id="submit" id="buttonb">Terminer</button>
             </form>
         </div>
         

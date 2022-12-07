@@ -17,6 +17,7 @@ body{
     display: flex;
 
     .left{
+        overflow-y: auto;
         box-sizing: border-box;
         padding: 30px;
         @media only screen and (max-width: 600px) {
@@ -38,18 +39,26 @@ body{
             padding: 0 0 15px 0;
         }
 
+        #form_b{
+            display: none;
+        }
+
         form{
             display: flex;
+        }
+
+        form, #form_b{
             flex-direction: column;
             width: 100%;
 
-            #ML{
+            #ML, #ML_B{
                 font-size: 12px ;
                 margin-top: 10px;
                 color: #676767;
             }
 
             label{
+                color: #5a5a5a;
                 font-size: 14px;
                 padding-bottom: 5px;
                 width: 100%;
