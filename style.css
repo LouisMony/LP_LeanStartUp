@@ -27,6 +27,7 @@ body .left {
   padding: 15px 30px 30px 30px;
   height: 100vh;
   width: 40%;
+  min-width: 400px;
 }
 
 body .left::-webkit-scrollbar {
@@ -37,6 +38,7 @@ body .left::-webkit-scrollbar {
   body .left {
     padding: 15px !important;
     width: 100%;
+    min-width: none;
   }
 }
 
@@ -50,7 +52,7 @@ body .left h1 {
   margin: 0;
   padding: 0 0 10px 0;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 body .left p {

@@ -12,7 +12,7 @@ function Onmount(){
     }
 }
 
-//Onmount()
+Onmount()
 
 function handleForm(event) { 
     event.preventDefault(); 
@@ -61,6 +61,8 @@ function handleForm(event) {
 function changeForm(){
     form.style.display = "none"
     form_b.style.display = "flex"
+    document.getElementById("titre").style.display = "none"
+    document.getElementById("description").style.display = "none"
 }
 
 

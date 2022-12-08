@@ -29,9 +29,11 @@ body{
         @media only screen and (max-width: 600px) {
             padding: 15px!important;
             width: 100%;
+            min-width: none;
         }
         height: 100vh;
         width: 40%;
+        min-width: 400px;
 
         img{
             display: block;
@@ -42,7 +44,7 @@ body{
             margin: 0;
             padding: 0 0 10px 0;
             font-weight: 600;
-            line-height: normal;
+            line-height: 1.2;
         }
 
         p{
