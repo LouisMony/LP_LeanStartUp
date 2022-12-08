@@ -170,7 +170,7 @@ body .right {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("img/bg.webp");
+  background-image: url("img/bg.jpg");
 }
 
 @media only screen and (max-width: 600px) {

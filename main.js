@@ -109,6 +109,9 @@ function handleFormb(event) {
         console.log(result.records)
         localStorage.setItem("complished", true)
         Onmount()
+
+        const url ="https://www.google.fr/"
+        window.open(url, "_self").focus();
     })
     .catch(error => console.log('error', error));
 } 
