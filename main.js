@@ -110,7 +110,7 @@ function handleFormb(event) {
         localStorage.setItem("complished", true)
         Onmount()
 
-        const url ="https://www.google.fr/"
+        const url ="https://xd.adobe.com/view/81c52430-5110-4b68-9145-a6f6bd029465-d496/?fullscreen&hints=off"
         window.open(url, "_self").focus();
     })
     .catch(error => console.log('error', error));
